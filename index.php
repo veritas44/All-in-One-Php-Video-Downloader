@@ -99,12 +99,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <tbody>
                 <?php if ($isSuccessResponse): ?>
                         <tr>
-                            <td><iframe style="width:100%;height:70px;border:0;overflow:hidden;" scrolling="no" src="https://vkrdl.000webhostapp.com/apis/d/?u=<?= htmlspecialchars($url) ?>&f=mp3"></iframe>
-                                <iframe style="width:100%;height:70px;border:0;overflow:hidden;" scrolling="no" src="https://vkrdl.000webhostapp.com/apis/d/?u=<?= htmlspecialchars($url) ?>&f=360"></iframe>
-                                <iframe style="width:100%;height:70px;border:0;overflow:hidden;" scrolling="no" src="https://vkrdl.000webhostapp.com/apis/d/?u=<?= htmlspecialchars($url) ?>&f=720"></iframe>
-                                <br><br>
-                               <a href="http://vkrdl.000webhostapp.com/@download/?url=<?= htmlspecialchars($url) ?>">  <button class="btn btn-primary btn-block">More Download Format </button></a>
-                
+                            <td><iframe style="width:100%;height:70px;border:0;overflow:hidden;" scrolling="no" src="https://apidl.herokuapp.com/@dl/mp3/?url=<?= htmlspecialchars($url) ?>"></iframe>
+                                <iframe style="width:100%;height:70px;border:0;overflow:hidden;" scrolling="no" src="https://apidl.herokuapp.com/@dl/mp4/?url=<?= htmlspecialchars($url) ?>"></iframe>
+                                <iframe style="width:100%;height:70px;border:0;overflow:hidden;" scrolling="no" src="https://apidl.herokuapp.com/@dl/mp4hd/?url=<?= htmlspecialchars($url) ?>"></iframe>
+                                <br>
                                 
                             </td>
                       </tr>
